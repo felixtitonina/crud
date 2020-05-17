@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.9",
+    "yup": "^0.28.5"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "devi": "nodemon --inspect src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "sequelize-cli": "^5.5.1",
+    "sucrase": "^3.13.0"
+  }
+}
