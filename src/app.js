@@ -10,6 +10,7 @@ class App {
         this.server = express()
         this.middlewares()
         this.routes()
+        
     }
     middlewares() {
         this.server.use(express.json())
