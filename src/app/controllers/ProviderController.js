@@ -5,10 +5,10 @@ class ProviderController {
     async index(req, res) {
         const providers = await User.findAll({  
             where: { provider: true },
-            attributes: ['id', 'name', 'email', 'avatar_id'],
-            include:  [{
-                model: File,
-                as: 'avatar',
+            attributes: ['id', 'name', 'email', 'avatar_id'], // o que quero receber
+            include:  [{ 
+                model: File, // pega dados do relacionamento
+                as: 'avatar', // apelido
                 attributes: ['name', 'path', 'url']
             }]
         })
